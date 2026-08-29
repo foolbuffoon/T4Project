@@ -36,7 +36,7 @@ def health_increase(character, consumables):
 def main():
     start_input = input("Press enter to begin")
     if start_input == "":
-        game_start == True
+        game_start = True
     start_screen()
     while game_start == True:
         print("You begin your journey...")
@@ -44,7 +44,7 @@ def main():
             "You awake in a swamp, with sword in your hand and no idea of who you are in your head"
         )
         end_screen()
-        game_start == False
+        game_start = False
     repeat()
 
 
@@ -71,10 +71,10 @@ def end_screen():
 # func that allows the user to repeat the game
 def repeat():
     end_input = input("Play again? Y/N? ")
-    if end_input == "Y" or endinput == "y":
+    if end_input == "Y" or end_input == "y":
         print("\n")
         main()
-    elif end_input == "N" or endinput == "n":
+    elif end_input == "N" or end_input == "n":
         end_screen()
         sys.exit()
 

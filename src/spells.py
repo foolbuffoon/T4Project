@@ -2,7 +2,7 @@ class Spells:
     spell_type = 0
 
     def __init__(self):
-        spell_type = 0
+        self.spell_type = 0
 
     def typeSet(self):
         self.spell_type = 1
